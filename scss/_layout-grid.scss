@@ -1,0 +1,69 @@
+/* Layout Grid  */
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: 0.2fr 3fr 30px;
+  gap: 0em 0em;
+  margin-bottom: 0;
+  grid-auto-flow: row dense;
+  align-content: stretch;
+  grid-template-areas:
+    "cabecera cabecera cabecera cabecera cabecera cabecera cabecera cabecera cabecera cabecera cabecera"
+    "main-principal main-principal main-principal main-principal main-principal main-principal main-principal main-principal main-principal main-principal main-principal"
+    "pie-pagina pie-pagina pie-pagina pie-pagina pie-pagina pie-pagina pie-pagina pie-pagina pie-pagina pie-pagina pie-pagina";
+}
+
+.cabecera {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "logotipo logotipo . . . navegador navegador navegador navegador navegador navegador";
+  grid-area: cabecera;
+}
+
+.logotipo {
+  justify-self: start;
+  align-self: center;
+  grid-area: logotipo;
+}
+
+.navegador {
+  justify-self: end;
+  align-self: center;
+  grid-area: navegador;
+  padding-right: 32m;
+}
+
+.main-principal {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 0.1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "pre-imagen"
+    "seccion";
+  grid-area: main-principal;
+}
+
+.pre-imagen {
+  grid-area: pre-imagen;
+  justify-self: stretch;
+  align-self: stretch;
+ 
+}
+
+.seccion {
+  grid-area: seccion;
+  justify-self: stretch;
+  align-self: stretch;
+}
+.pie-pagina {
+  grid-area: pie-pagina;
+}
+
+/* fin layout grid */

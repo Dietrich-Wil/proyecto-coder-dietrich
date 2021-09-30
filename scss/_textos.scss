@@ -1,0 +1,30 @@
+.titulares {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 2px 2px 3px black;
+  padding-bottom: 1em;
+  margin: 1em;
+}
+
+.texto-bueno {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 2;
+  text-align: center;
+  margin: 1em;
+}
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+}

@@ -1,0 +1,434 @@
+/* Layout Grid  */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: 0.2fr 3fr 30px;
+  gap: 0em 0em;
+  margin-bottom: 0;
+  grid-auto-flow: row dense;
+  align-content: stretch;
+  grid-template-areas: "cabecera cabecera cabecera cabecera cabecera cabecera cabecera cabecera cabecera cabecera cabecera" "main-principal main-principal main-principal main-principal main-principal main-principal main-principal main-principal main-principal main-principal main-principal" "pie-pagina pie-pagina pie-pagina pie-pagina pie-pagina pie-pagina pie-pagina pie-pagina pie-pagina pie-pagina pie-pagina"; }
+
+.cabecera {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "logotipo logotipo . . . navegador navegador navegador navegador navegador navegador";
+  grid-area: cabecera; }
+
+.logotipo {
+  justify-self: start;
+  align-self: center;
+  grid-area: logotipo; }
+
+.navegador {
+  justify-self: end;
+  align-self: center;
+  grid-area: navegador;
+  padding-right: 32m; }
+
+.main-principal {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 0.1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "pre-imagen" "seccion";
+  grid-area: main-principal; }
+
+.pre-imagen {
+  grid-area: pre-imagen;
+  justify-self: stretch;
+  align-self: stretch; }
+
+.seccion {
+  grid-area: seccion;
+  justify-self: stretch;
+  align-self: stretch; }
+
+.pie-pagina {
+  grid-area: pie-pagina; }
+
+/* fin layout grid */
+/* header */
+.navbar {
+  background-color: #d9d9d9;
+  color: #593e3e; }
+  .navbar .navbar-ligth {
+    color: #593e3e; }
+  .navbar .nav-link {
+    color: #593e3e;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center; }
+  .navbar .nav-link:hover {
+    border-bottom: #e09d9d solid 2px;
+    border-left: #e09d9d solid 2px;
+    border-radius: 4px;
+    background-color: #f7f7f7; }
+  .navbar .navbar-dark {
+    color: #593e3e; }
+
+/* carousel */
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem; }
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 2rem;
+  z-index: 10; }
+  .carousel-caption h2 {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    line-height: 1;
+    text-shadow: 2px 2px 3px black; }
+  .carousel-caption p {
+    color: #ffffff;
+    line-height: 1;
+    text-shadow: 2px 2px 3px black; }
+    .carousel-caption p a {
+      text-shadow: none; }
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem; }
+
+.transparency-image {
+  opacity: 0.3;
+  z-index: -1; }
+
+/* MARKETING CONTENT
+  -------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center; }
+
+.marketing h2 {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 2px 2px 3px black;
+  padding-bottom: 1em; }
+
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem; }
+
+/* rtl:end:ignore */
+/* Featurettes
+  ------------------------- */
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */ }
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem; }
+
+/* RESPONSIVE CSS
+  -------------------------------------------------- */
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4; }
+  .featurette-heading {
+    font-size: 50px; } }
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem; } }
+
+/* fin carousel */
+.titulares {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 2px 2px 3px black;
+  padding-bottom: 1em;
+  margin: 1em; }
+
+.texto-bueno {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 2;
+  text-align: center;
+  margin: 1em; }
+
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */ }
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1; }
+
+/* fondo pag nosotros */
+.imagen-fondo {
+  background-image: url(../public/img/banner.jpg);
+  background-color: #e09d9d;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto; }
+
+.animacion {
+  display: flex;
+  height: 1em;
+  width: 7.5em;
+  overflow: hidden;
+  justify-self: center;
+  text-align: center;
+  padding: auto;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 2px 2px 3px black;
+  padding-bottom: 2em;
+  background-image: none;
+  box-shadow: none;
+  line-height: 1.3; }
+
+.animacion-title {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 1;
+  text-shadow: 2px 2px 3px black;
+  padding-bottom: 1em;
+  background-image: none;
+  box-shadow: none;
+  line-height: 1.3; }
+
+.animacion ul {
+  list-style: none;
+  animation: cambiar 10s infinite;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  padding: 0; }
+
+.animacion li {
+  padding: 10px 10px 9px 10px; }
+
+.alinear-centrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+@keyframes cambiar {
+  0% {
+    margin-top: 0%; }
+  20% {
+    margin-top: 0%; }
+  25% {
+    margin-top: -1.5em; }
+  50% {
+    margin-top: -1.5em; }
+  55% {
+    margin-top: -3em; }
+  80% {
+    margin-top: -3em; }
+  85% {
+    margin-top: -1.5em; }
+  95% {
+    margin-top: -1.5em; }
+  100% {
+    margin-top: 0%; } }
+
+/* submenu para proyectos con flexbox*/
+.subMenu {
+  margin-bottom: 4em;
+  border-bottom: #593e3e solid;
+  max-height: 4em; }
+  .subMenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .subMenu ul li {
+      text-align: center;
+      padding: 1em 0 1em 0; }
+    .subMenu ul a {
+      display: block;
+      color: #593e3e;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-align: center; }
+
+/* items del menu */
+/* enlaces del menu */
+/* platilla grid */
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04); }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense; }
+
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2; }
+  .tall {
+    grid-row: span 2; } }
+
+h1 {
+  font-family: "Open Sans Condensed";
+  font-weight: normal;
+  color: #ccc;
+  font-size: 3em;
+  line-height: 0.3em; }
+
+form {
+  width: 300px;
+  margin: 0 auto; }
+
+input {
+  display: block;
+  width: 89%;
+  padding: 10px 5%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-top: 10px; }
+
+textarea {
+  display: block;
+  width: 89%;
+  padding: 10px 5%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 150px; }
+  textarea:focus {
+    outline: 0; }
+
+input:focus, button {
+  outline: 0; }
+
+.submit {
+  border-radius: 10px;
+  background-color: #ccc;
+  color: #fff;
+  border: 0;
+  padding: 5px 0;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-family: "Open Sans Condensed";
+  font-size: 1.5em;
+  cursor: pointer;
+  width: 100%;
+  display: block; }
+  .submit:hover {
+    background-color: #fff;
+    color: #ccc;
+    border: 2px solid #ccc; }
+
+[href*='facebook'] {
+  background: #3b5999; }
+  [href*='facebook']::before {
+    content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/15542/facebook.png); }
+
+[href*='twitter'] {
+  background: #55acee; }
+  [href*='twitter']::before {
+    content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/15542/twitter.png); }
+
+[href*='linkedin'] {
+  background: #0077B5; }
+  [href*='linkedin']::before {
+    content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/15542/linkedin.png); }
+
+[href*='google'] {
+  background: #dd4b39; }
+  [href*='google']::before {
+    content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/15542/google.png); }
+
+.redes-desafio ul {
+  margin: 0 auto;
+  max-width: 30rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around; }
+
+.redes-desafio li {
+  text-align: center; }
+
+.redes-desafio a {
+  border: 4px solid black;
+  border-radius: 6px;
+  color: black;
+  display: block;
+  font-weight: bold;
+  margin: 0.25rem;
+  padding: 0.5rem;
+  text-decoration: none; }
+  .redes-desafio a::before {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.5em; }
