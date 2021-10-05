@@ -11,10 +11,18 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.13"
   },
   "dependencies": {
     "bootstrap-5.1.1": "^5.1.1"
   },
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dietrich-Wil/proyecto-coder-dietrich.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dietrich-Wil/proyecto-coder-dietrich/issues"
+  },
+  "homepage": "https://github.com/Dietrich-Wil/proyecto-coder-dietrich#readme"
 }
