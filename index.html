@@ -21,8 +21,10 @@
     <link rel="manifest" href="public/favicon_io/site.webmanifest">
 
     <!-- Keywords -->
-    <meta name="description" content="Hola, somos Estudio de Arquitectura Galindez. Diseñamos y desarrollamos obras y proyectos para todo el mundo. Nos ajustamos a las necesidades particulares de cada cliente, sus intereses y necesidades.">
-    <meta name="keywords" content="arquitectura, Estudio, diseño, obra, arquitecto, estudio de arquitectura, diseño interior">
+    <meta name="description"
+        content="Hola, somos Estudio de Arquitectura Galindez. Diseñamos y desarrollamos obras y proyectos para todo el mundo. Nos ajustamos a las necesidades particulares de cada cliente, sus intereses y necesidades.">
+    <meta name="keywords"
+        content="arquitectura, Estudio, diseño, obra, arquitecto, estudio de arquitectura, diseño interior">
 
     <!-- Canonical Meta tag for unique link -->
     <link rel="canonical" href="index.html" />
@@ -35,6 +37,9 @@
     <!-- CSS-SCSS -->
 
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -171,9 +176,10 @@
                 </div>
                 <div class="col-md-5">
 
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                        src="/public/img/home/imagen-1-home.webp"
-                        alt="obra-architect" width="500" height="500">
+                    <img data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                        src="/public/img/home/imagen-1-home.webp" alt="obra-architect" width="500" height="500">
 
 
                 </div>
@@ -193,10 +199,11 @@
                         bajo costo de mantenimiento, amigables con el entorno, que mejoren y feciliten la vida de las
                         personas.</p>
                 </div>
-                <div class="col-md-5 order-md-1">
+                <div class="col-md-5 order-md-1" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                        src="/public/img/home/imagen-02-home.jpeg"
-                        alt="obra-architect" width="500" height="500">
+                        src="/public/img/home/imagen-02-home.jpeg" alt="obra-architect" width="500" height="500">
 
                 </div>
             </div>
@@ -261,6 +268,11 @@
     <!-- end footer -->
 
     <!-- script -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="css/bootstrap-5.1.0-dist/js/bootstrap.js"></script>
 </body>
 
